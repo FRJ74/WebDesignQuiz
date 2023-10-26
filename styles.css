@@ -13,10 +13,15 @@ body {
     display: flexbox;
   }
 
+  h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+  }
+
   /* Styling the image */
   #logo {
     width: max(100px, 18vw);
     background-color: #0a0a23;
-    aspect-ratio: 35/4;
+    aspect-ratio: 35 / 4;
     padding: 0.4rem;
   }
