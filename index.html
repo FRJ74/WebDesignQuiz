@@ -2,23 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Free Web Design Quiz">
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
-    <title>HTML/CSS Quiz</title>
+    <title>Accessibility Quiz</title>
 </head>
 <body>
     <header>
-        <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" id="logo" alt="Fcc image">
+        <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" id="logo" alt="Fcc image">
         <h1>HTML/CSS Quiz</h1>
         <nav>
             <ul>
-                <li><a href="#">INFO</a></li>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-            </ul>
+                <li><a href="#student-info">INFO</a></li>
+                <li><a href="#html-questions">HTML</a></li>
+                <li><a href="#css-questions">CSS</a></li>
+            </ul> 
         </nav> 
     </header>
-    <main></main>
+    <main>
+        <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Student Information</h2>
+                <div class="info">
+                    <label for="full-name">Name</label><br>
+                    <input id="full-name"/>
+                </div><br>
+                <div class="info">
+                    <label for="email">Email</label><br>
+                    <input id="email" />
+                </div><br>
+                <div class="info">
+                    <label for="dob">D.O.B</label><br>
+                    <input id="dob"/>
+                </div>
+             </section>
+             <section role="region" aria-labelledby="html-questions">
+               <h2 id="html-questions">HTML Questions</h2>
+             </section>
+             <section role="region" aria-labelledby="css-questions">
+               <h2 id="css-questions">CSS Questions</h2>
+             </section>
+        </form>
+    </main> 
 </body> 
 </html>
