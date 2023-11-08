@@ -35,16 +35,24 @@
                     <label for="dob">D.O.B<span class="sr-only">(Date of Birth)</span></label><br>
                     <input type="date" name="dod" id="dob"/>
                 </div>
-             </section>
-             <section role="region" aria-labelledby="html-questions">
+            </section>
+            <section role="region" aria-labelledby="html-questions">
                <h2 id="html-questions">HTML Questions</h2>
                <div class="question-block">
                 <p>1</p>
                 <fieldset class="question" name="html-question">
                     <legend>HTML stands for hypertext markup lingo.</legend>
                  <ul class="answers-list">
-                    <li><label><input type="radio"></label></li>
-                    <li><label><input type="radio"></label></li>
+                    <li>
+                        <label for="q1-a1">
+                         <input id="q1-a1" type="radio" value="true" name="html-q1">True
+                        </label>
+                    </li>
+                    <li>
+                        <label for="q1-a2">
+                            <input id="q1-a2"type="radio" value="false" name="html-q1">False
+                        </label>
+                    </li>
                  </ul>
                 </fieldset>
               </div>
@@ -52,13 +60,21 @@
                 <p>2</p>
                 <fieldset class="question" name="html-question">
                     <legend>HTML is used to create the structure of a website.</legend>
-                 <ul class="answers-list">
-                    <li><label><input type="radio"></label></li>
-                    <li><label><input type="radio"></label></li>
-                 </ul>
+                   <ul class="answers-list">
+                     <li>
+                        <label for="q2-a1">
+                            <input id="q2-a1" type="radio" value="true" name="html-q2">True
+                        </label>
+                     </li>
+                     <li>
+                        <label for="q2-a2">
+                            <input id="q2-a2" type="radio" value="false" name="html-q2">False
+                        </label>
+                     </li>
+                   </ul>
                 </fieldset>
-             </section>
-             <section role="region" aria-labelledby="css-questions">
+            </section>
+            <section role="region" aria-labelledby="css-questions">
                <h2 id="css-questions">CSS Questions</h2>
             </section>
         </form>
