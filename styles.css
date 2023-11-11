@@ -1,4 +1,8 @@
 /* Main styles */
+main {
+  padding-top: 25px;
+  }
+  
 body {
     background: #f5f6f7;
     color: #1b1b32;
@@ -10,12 +14,18 @@ body {
     width: 100%;
     height: 50px;
     background-color: #1b1b32;
-    display: flex;
+    display: flexbox;
+    justify-content:space-between;
+    align-items: center;
+    position:fixed;
+    top: 0;
+
   }
 
   h1 {
     color: #f1be32;
     font-size: min(5vw, 1.2em);
+    text-align: center;
   }
 
   h1, h2 {
@@ -58,7 +68,21 @@ body {
     border: 0;
   }
 
-  /* prevent unnecessary repetition, target the before pseudo-element of the p element, and give it a content property of "Question #" */
+  /* To prevent unnecessary repetition, target the before pseudo-element of the p element, and give it a content property of "Question #" */
   p::before {
     content: "Question #"
   }
+
+  /*Changing the font color of all the anchor elements within the list elements to a contrast ratio of 7:1 for visual accessibility.*/
+  li > a {
+    color: orange;
+  }
+  /* create a new selector targeting the navigation list elements so that when the cursor hovers over them, the background color and text color are switched, and the cursor becomes a pointer.*/
+  li > a {
+    text-decoration: none;
+    }
+  nav > ul > li:hover {
+    background-color:#dfdfe2;
+    color:#1b1b32;
+    cursor: pointer;
+  } 
