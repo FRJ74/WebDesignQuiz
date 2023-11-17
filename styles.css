@@ -141,3 +141,17 @@ body {
     margin-top: 10px;
     padding: 0 5px 0 5px;
   }
+
+  /* Add styling to div .question-block */
+  .question-block {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+  }
+
+  .question {
+    border: none;
+    padding-bottom: 0;
+  }
