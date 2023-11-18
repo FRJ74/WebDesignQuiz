@@ -1,4 +1,11 @@
 /* Main styles */
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
 main {
   padding-top: 50px;
 }
@@ -172,4 +179,22 @@ body {
     font-size: 23px;
     background: #d0d0d5;
     border: 3px solid #3b3b4f;
+  }
+
+  /* Style footer*/
+
+  footer {
+    display: flex;
+    justify-content: center;
+    background-color: #2a2a40;
+    color: #f1be32;
+  }
+
+  footer a {
+    color: white;
+  }
+
+  address {
+    text-align: center;
+    padding: 5px;
   }
